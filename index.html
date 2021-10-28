@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="timetracker.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="timeContainer">
+        <div id='hour'><span>00</span></div>
+        <div id='minute'><span>00</span></div>
+        <div id='second'><span>00</span></div>
+      </div>
+
+      <div class='otherInfoContainer'>
+        <input type="text" id="startDate" placeholder="Start Time" readonly>
+        <input type="text" id="endDate" placeholder="End Time" readonly>
+        <input type="text" id="Wage" placeholder="Wage(hr)" value="30">
+        <input type="text" id="earned" placeholder="Amount Earned" readonly>
+      </div>
+
+      <div class='controlsContainer'>
+        <button id='play'><i class="material-icons">play_arrow</i>Start</button>
+        <button id='pause'><i class="material-icons">pause</i>Pause</button>
+        <button id='reset'><i class="material-icons">replay</i>Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
